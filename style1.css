@@ -1,0 +1,169 @@
+@font-face{
+   font-family:Josefin-Sans-Semi-Bold; 
+   src: url(./Fonts/Poppins-Light.ttf)
+ }
+
+body
+{
+	margin: 0px;
+	background-color: teal;
+	background-image: url("./Background.png");
+	background-blend-mode: screen;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+#Main_Container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Josefin-Sans-Semi-Bold;
+}
+
+#Header
+{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 70px;
+	background-color: White;
+	display: flex;
+	align-items: center;
+}
+
+
+#Nav
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    top: 90px;
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid teal;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#Content
+{
+/*    top: 150px;*/
+    height: auto;
+   /* background-color: yellow;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 150px;
+}
+
+#Footer
+{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	background-color: teal;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	text-align: left;
+	opacity: 0.7;
+	padding-left: 25px;
+}
+
+
+#Top_Left
+{
+	float: left;
+	width: 50%;
+	text-align: left;
+	margin-left: 20px;
+	font-size: 40px;
+	color: teal;
+}
+
+#Top_Right
+{
+	float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: 40px;
+}
+
+#Top_Right span
+{
+	padding: 20px;
+}
+
+#Nav span
+{
+	height: 100%;
+    width: inherit;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+#Nav span:hover{
+	/*background-color: teal;*/
+	
+	cursor: pointer;
+}
+
+#Nav span:hover a{
+	color: teal;
+}
+#Nav span a
+{
+	margin: auto;
+}
+
+#Content div
+{
+	height: 400px;
+	width: 300px;
+	background-color: teal;
+	border-radius: 15px;
+	margin: 25px;
+	transition: 0.5s;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 8px grey;
+}
+
+#Content div:hover
+{
+	transform: scale(1.051);
+}
+
+#Content div span:nth-child(1)
+{
+	height: 80%;
+}
+
+#Content div span:nth-child(2)
+{
+	height: 20%;
+	font-size: 30px;
+	background-color: white;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
